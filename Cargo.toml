@@ -1,0 +1,10 @@
+[package]
+name = "chat_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = "0.3.30"
+snafu = "0.8.2"
+tokio = { version = "1.37.0", features = ["rt-multi-thread", "net", "fs", "io-util"] }
+tokio-util = { version = "0.7.11", features = ["io-util", "codec", "futures-util"] }
